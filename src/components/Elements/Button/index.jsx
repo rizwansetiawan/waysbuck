@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <button
       type="submit"
-      className="bg-[#BD0707] mt-7 h-[35px] text-white rounded-md"
+      className="bg-[#BD0707] font-semibold mt-7 h-[35px] text-white rounded-md"
     >
       {children}
     </button>
