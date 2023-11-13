@@ -8,6 +8,10 @@ import PageCoffee3 from "./Pages/PageCoffee3.jsx";
 import PageCoffee4 from "./Pages/PageCoffee4.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Fragments/Cart.jsx";
+import Profile from "./components/Fragments/Profile.jsx";
+import Admin from "./components/Fragments/Admin.jsx";
+import AddToping from "./components/Fragments/AddToping.jsx";
+import AddProduct from "./components/Fragments/AddProduct.jsx";
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
         <Route path="/detail-coffee3" element={<PageCoffee3 />} />
         <Route path="/detail-coffee4" element={<PageCoffee4 />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/addtoping" element={<AddToping />} />
+        <Route path="/addproduct" element={<AddProduct />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
